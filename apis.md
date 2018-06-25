@@ -4,7 +4,7 @@ description: This is a repository of mail APIs, self-contained as a Github repos
   with HTML and YAML representations of the APIs and their surrounding operations.
 image: http://template.streamdata.gallery/assets/mail.png
 created: "2018-02-24"
-modified: "2018-06-20"
+modified: "2018-06-25"
 url: http://mail.streamdata.gallery/apis.json
 specificationVersion: "0.14"
 apis: []
@@ -36,25 +36,25 @@ include:
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/stack-exchange/apis.yaml
 - name: GitHub
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/github/apis.yaml
-- name: Lykke
-  url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/lykke/apis.yaml
 - name: Dyn
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/dyn/apis.yaml
+- name: Lykke
+  url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/lykke/apis.yaml
 - name: NPR
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/npr/apis.yaml
 - name: Bitbucket
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/bitbucket/apis.yaml
-- name: AXA Assistance
-  url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/axa-assistance/apis.yaml
 - name: FullContact
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/fullcontact/apis.yaml
+- name: AXA Assistance
+  url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/axa-assistance/apis.yaml
 - name: Mattermost
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/mattermost/apis.yaml
 - name: Jumpseller
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/jumpseller/apis.yaml
 - name: Postmark
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/postmark/apis.yaml
-- name: taxamo
+- name: Taxamo
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/taxamo/apis.yaml
 - name: VictorOps
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/victorops/apis.yaml
