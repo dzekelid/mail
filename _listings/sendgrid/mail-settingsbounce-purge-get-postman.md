@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get Mail Settings Bounce Purge",
     "_postman_id": "08b1fe19-a4c1-4426-9205-3044012b549d",
-    "description": "**This endpoint allows you to retrieve your current bounce purge settings.**\n\nThis setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
+    "description": "**This endpoint allows you to retrieve your current bounce purge settings.**\n\nThis setting allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

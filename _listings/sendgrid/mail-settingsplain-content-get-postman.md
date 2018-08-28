@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get Mail Settings Plain Content",
     "_postman_id": "9afd87b2-9067-4ea7-928a-cb7d0e431de7",
-    "description": "**This endpoint allows you to retrieve your current Plain Content mail settings.**\n\nThe plain content setting will automatically convert any plain text emails that you send to HTML before sending.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
+    "description": "**This endpoint allows you to retrieve your current Plain Content mail settings.**\n\nThe plain content setting will automatically convert any plain text emails that you send to HTML before sending.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

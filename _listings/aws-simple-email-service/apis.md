@@ -9,88 +9,44 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Mail
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Simple Email Service API Delete Verified Email Address
-  x-api-slug: aws-simple-email-service-api
-  description: Deletes the specified email address from the list of verified addresses.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
-  humanURL: https://aws.amazon.com/ses/
-  baseURL: ://///?Action=DeleteVerifiedEmailAddress
-  tags: Verified Email Addresses
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actiondeleteverifiedemailaddress-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actiondeleteverifiedemailaddress-get-openapi.md
-- name: AWS Simple Email Service API List Verified Email Addresses
-  x-api-slug: aws-simple-email-service-api
-  description: Returns a list containing all of the email addresses that have been
-    verified.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
-  humanURL: https://aws.amazon.com/ses/
-  baseURL: ://///?Action=ListVerifiedEmailAddresses
-  tags: 'Verified Email Addresses '
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionlistverifiedemailaddresses-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionlistverifiedemailaddresses-get-openapi.md
-- name: AWS Simple Email Service API Send Email
-  x-api-slug: aws-simple-email-service-api
-  description: Composes an email message based on input data, and then immediately
-    queues the message for sending.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
-  humanURL: https://aws.amazon.com/ses/
-  baseURL: ://///?Action=SendEmail
-  tags: Email
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsendemail-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsendemail-get-openapi.md
-- name: AWS Simple Email Service API Send Raw Email
-  x-api-slug: aws-simple-email-service-api
-  description: Sends an email message, with header and content specified by the client.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
-  humanURL: https://aws.amazon.com/ses/
-  baseURL: ://///?Action=SendRawEmail
-  tags: Email
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsendrawemail-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsendrawemail-get-openapi.md
-- name: AWS Simple Email Service API Verify Email Address
-  x-api-slug: aws-simple-email-service-api
-  description: Verifies an email address.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
-  humanURL: https://aws.amazon.com/ses/
-  baseURL: ://///?Action=VerifyEmailAddress
-  tags: Email Addresses
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionverifyemailaddress-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionverifyemailaddress-get-openapi.md
-- name: AWS Simple Email Service API
-  x-api-slug: aws-simple-email-service-api
-  description: Amazon Simple Email Service (Amazon SES) is a cost-effective email
-    service built on the reliable and scalable infrastructure that Amazon.com developed
-    to serve its own customer base. With Amazon SES, you can send and receive email
-    with no required minimum commitments &ndash; you pay as you go, and you only pay
-    for what you use.
+- name: AWS Simple Email Service API - Get Identity Mail From Domain Attributes
+  x-api-slug: actiongetidentitymailfromdomainattributes-get
+  description: Returns the custom MAIL FROM attributes for a list of identities (email
+    addresses and/or domains).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
   humanURL: https://aws.amazon.com/ses/
   baseURL: :///
-  tags: Mail
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Emails, Messages, Profiles, Relative Data, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actiongetidentitymailfromdomainattributes-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actiongetidentitymailfromdomainattributes-get-openapi.md
+- name: AWS Simple Email Service API - Set Identity Mail From Domain
+  x-api-slug: actionsetidentitymailfromdomain-get
+  description: Enables or disables the custom MAIL FROM domain setup for a verified
+    identity (an email address or a domain).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Application-Services_AmazonSES.png
+  humanURL: https://aws.amazon.com/ses/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Emails, Messages, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsetidentitymailfromdomain-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/mail/master/_listings/aws-simple-email-service/actionsetidentitymailfromdomain-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.shield.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://aws.simple.email.service.stack.network
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SES
 - type: x-documentation

@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get Mail Settings Forward Spam",
     "_postman_id": "54320a42-ad04-4ef0-bc65-d8de842a4e7c",
-    "description": "**This endpoint allows you to retrieve your current Forward Spam mail settings.**\n\nEnabling the forward spam setting allows you to specify an email address to which spam reports will be forwarded.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
+    "description": "**This endpoint allows you to retrieve your current Forward Spam mail settings.**\n\nEnabling the forward spam setting allows you to specify an email address to which spam reports will be forwarded.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

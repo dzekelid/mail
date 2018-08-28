@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS Simple Email Service
 x-complete: 1
@@ -12,154 +11,48 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteVerifiedEmailAddress:
+  /?Action=GetIdentityMailFromDomainAttributes:
     get:
-      summary: Delete Verified Email Address
-      description: Deletes the specified email address from the list of verified addresses.
-      operationId: deleteVerifiedEmailAddress
-      x-api-path-slug: actiondeleteverifiedemailaddress-get
+      summary: Get Identity Mail From Domain Attributes
+      description: Returns the custom MAIL FROM attributes for a list of identities
+        (email addresses and/or domains).
+      operationId: getIdentityMailFromDomainAttributes
+      x-api-path-slug: actiongetidentitymailfromdomainattributes-get
       parameters:
       - in: query
-        name: EmailAddress
-        description: An email address to be removed from the list of verified addresses
+        name: Identities.member.N
+        description: A list of one or more identities
         type: string
       responses:
         200:
           description: OK
       tags:
-      - Verified Email Addresses
-  /?Action=ListVerifiedEmailAddresses:
+      - Identity
+  /?Action=SetIdentityMailFromDomain:
     get:
-      summary: List Verified Email Addresses
-      description: Returns a list containing all of the email addresses that have
-        been verified.
-      operationId: listVerifiedEmailAddresses
-      x-api-path-slug: actionlistverifiedemailaddresses-get
+      summary: Set Identity Mail From Domain
+      description: Enables or disables the custom MAIL FROM domain setup for a verified
+        identity (an email address or a domain).
+      operationId: setIdentityMailFromDomain
+      x-api-path-slug: actionsetidentitymailfromdomain-get
       parameters:
       - in: query
-        name: VerifiedEmailAddresses.member.N
-        description: A list of email addresses that have been verified
+        name: BehaviorOnMXFailure
+        description: The action that you want Amazon SES to take if it cannot successfully
+          read the required MX record when you send an email
+        type: string
+      - in: query
+        name: Identity
+        description: The verified identity for which you want to enable or disable
+          the specified custom MAIL FROM domain
+        type: string
+      - in: query
+        name: MailFromDomain
+        description: The custom MAIL FROM domain that you want the verified identity
+          to use
         type: string
       responses:
         200:
           description: OK
       tags:
-      - Verified Email Addresses
-  /?Action=SendEmail:
-    get:
-      summary: Send Email
-      description: Composes an email message based on input data, and then immediately
-        queues the message for sending.
-      operationId: sendEmail
-      x-api-path-slug: actionsendemail-get
-      parameters:
-      - in: query
-        name: ConfigurationSetName
-        description: The name of the configuration set to use when you send an email
-          using SendEmail
-        type: string
-      - in: query
-        name: Destination
-        description: 'The destination for this email, composed of To:, CC:, and BCC:
-          fields'
-        type: string
-      - in: query
-        name: Message
-        description: The message to be sent
-        type: string
-      - in: query
-        name: ReplyToAddresses.member.N
-        description: The reply-to email address(es) for the message
-        type: string
-      - in: query
-        name: ReturnPath
-        description: The email address to which bounces and complaints are to be forwarded
-          when feedback forwarding is enabled
-        type: string
-      - in: query
-        name: ReturnPathArn
-        description: This parameter is used only for sending authorization
-        type: string
-      - in: query
-        name: Source
-        description: The email address that is sending the email
-        type: string
-      - in: query
-        name: SourceArn
-        description: This parameter is used only for sending authorization
-        type: string
-      - in: query
-        name: Tags.member.N
-        description: A list of tags, in the form of name/value pairs, to apply to
-          an email that you send using SendEmail
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Email
-  /?Action=SendRawEmail:
-    get:
-      summary: Send Raw Email
-      description: Sends an email message, with header and content specified by the
-        client.
-      operationId: sendRawEmail
-      x-api-path-slug: actionsendrawemail-get
-      parameters:
-      - in: query
-        name: ConfigurationSetName
-        description: The name of the configuration set to use when you send an email
-          using SendRawEmail
-        type: string
-      - in: query
-        name: Destinations.member.N
-        description: 'A list of destinations for the message, consisting of To:, CC:,
-          and BCC: addresses'
-        type: string
-      - in: query
-        name: FromArn
-        description: This parameter is used only for sending authorization
-        type: string
-      - in: query
-        name: RawMessage
-        description: The raw text of the message
-        type: string
-      - in: query
-        name: ReturnPathArn
-        description: This parameter is used only for sending authorization
-        type: string
-      - in: query
-        name: Source
-        description: The identitys email address
-        type: string
-      - in: query
-        name: SourceArn
-        description: This parameter is used only for sending authorization
-        type: string
-      - in: query
-        name: Tags.member.N
-        description: A list of tags, in the form of name/value pairs, to apply to
-          an email that you send using SendRawEmail
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Email
-  /?Action=VerifyEmailAddress:
-    get:
-      summary: Verify Email Address
-      description: Verifies an email address.
-      operationId: verifyEmailAddress
-      x-api-path-slug: actionverifyemailaddress-get
-      parameters:
-      - in: query
-        name: EmailAddress
-        description: The email address to be verified
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Email Addresses
----
+      - Identity

@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get Mail Settings Spam Check",
     "_postman_id": "34553012-242d-4a9e-93b1-dabbeda391c0",
-    "description": "**This endpoint allows you to retrieve your current Spam Checker mail settings.**\n\nThe spam checker filter notifies you when emails are detected that exceed a predefined spam threshold.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
+    "description": "**This endpoint allows you to retrieve your current Spam Checker mail settings.**\n\nThe spam checker filter notifies you when emails are detected that exceed a predefined spam threshold.\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

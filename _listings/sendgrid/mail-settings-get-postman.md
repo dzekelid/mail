@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Get Mail Settings",
     "_postman_id": "c927331a-ea04-4edf-9424-128061a6d517",
-    "description": "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
+    "description": "**This endpoint allows you to retrieve a list of all mail settings.**\n\nMail settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid???s [Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) or [SMTP Relay](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html).",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

@@ -15,48 +15,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /groups/{id}/subscribeByMail:
-    post:
-      summary: Group Subscribe By Mail
-      description: 'group: subscribeByMail Calling this method will enable the current
-        user to receive email notifications for this group, about new posts, events,
-        and files in that group. Supported for only Office 365 groups.'
-      operationId: Group:SubscribeByMail
-      x-api-path-slug: groupsidsubscribebymail-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      - in: path
-        name: id
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Group
-      - SubscribeMail
-  /groups/{id}/unsubscribeByMail:
-    post:
-      summary: Group Unsubscribe By Mail
-      description: 'group: unsubscribeByMail Calling this method will prevent the
-        current user from receiving email notifications for this group about new posts,
-        events, and files in that group. Supported for only Office 365 groups.'
-      operationId: Group:UnsubscribeByMail
-      x-api-path-slug: groupsidunsubscribebymail-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      - in: path
-        name: id
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Group
-      - UnsubscribeMail
   /me/mailFolders/{id}/copy:
     post:
       summary: Mail Folder Copy
